@@ -1,0 +1,66 @@
+.star {
+  position: absolute;
+  background: var(--color-star);
+  border-radius: 50%;
+
+  @for $i from 1 through $numOfStars {
+    $top: random(99) * 1vh;
+    $left: random(99) * 1vw;
+    $size: random(2) * 1px;
+    $opacity: random(9) * 0.1;
+    $delay: random(50) * 1s;
+
+    &:nth-child(#{$i}) {
+      top: $top;
+      left: $left;
+      width: $size;
+      height: $size;
+      opacity: $opacity;
+      animation: shine 5s linear infinite $delay;
+    }
+  }
+}
+
+@keyframes shine {
+  10% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+
+.shooting-star {
+  position: absolute;
+  border-radius: 50%;
+
+  @for $i from 1 through $numOfShootingStars {
+    $width: random(3) * 0.1rem;
+    $height: random(8) * 1rem;
+    $left: (random(100) - 30) * 1vw;
+    $seconds: random(10) * 5s;
+    $delay: random(5) * 1s;
+
+    &:nth-child(#{$i}) {
+      width: $width;
+      height: $height;
+      top: -20%;
+      left: $left;
+      background: var(--color-shooting-star);
+      animation: shooting-star $seconds linear infinite $delay;
+    }
+  }
+}
+
+@keyframes shooting-star {
+  from {
+    transform: translateY(0rem) translateX(0rem) rotate(-45deg);
+    opacity: 0.5;
+    height: 1rem;
+  }
+  to {
+    transform: translateY(256rem) translateX(256rem) rotate(-45deg);
+    opacity: 1;
+    height: 80rem;
+  }
+}

@@ -1,0 +1,28 @@
+.starWars {
+  width: 35vw;
+
+  img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.author {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  opacity: 0.3;
+
+  a:link,
+  a:visited {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+}

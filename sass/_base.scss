@@ -1,0 +1,46 @@
+:root {
+  --color-background: #080915;
+  --color-star: #f8f8f8;
+  --color-shooting-star: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    #fff
+  );
+  --color-text: #eedb00;
+  --shadow-main: 1rem 1rem 7rem 2rem #103136 inset;
+}
+
+// star variables
+$numOfStars: 300;
+$numOfShootingStars: 5;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  position: fixed;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: var(--color-background);
+  box-shadow: var(--shadow-main);
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
