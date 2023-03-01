@@ -10,7 +10,7 @@ Made fully responsive for all screen sizes.
 
 ## Checkout the live demo
 
-[Star Wars]()
+[Star Wars](https://peac-h.github.io/13_star-wars/)
 
 ## Built with
 
