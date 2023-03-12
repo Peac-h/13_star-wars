@@ -12,6 +12,8 @@ Made fully responsive for all screen sizes.
 
 [Star Wars](https://peac-h.github.io/13_star-wars/)
 
+![Star Wars](https://raw.githubusercontent.com/Peac-h/13_star-wars/main/Screen%20Shot%202023-03-01%20at%209.28.14%20PM.png)
+
 ## Built with
 
 - html
